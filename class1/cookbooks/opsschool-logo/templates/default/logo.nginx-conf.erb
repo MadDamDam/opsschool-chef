@@ -1,0 +1,8 @@
+server {
+  listen <%= node['logo']['port'] %>;
+  server_name localhost;
+
+  location / {
+    root <%= node['logo']['path'] %>;
+  }
+}
